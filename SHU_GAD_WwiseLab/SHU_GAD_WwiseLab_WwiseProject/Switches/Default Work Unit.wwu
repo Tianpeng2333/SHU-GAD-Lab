@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8D040583-D48A-45CF-9F3C-0D9B613600E2}" SchemaVersion="133">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{8D040583-D48A-45CF-9F3C-0D9B613600E2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8D040583-D48A-45CF-9F3C-0D9B613600E2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="ShoeType" ID="{4D29AE71-59FC-4D01-8793-7C41BFD0DAAA}">
+					<ChildrenList>
+						<Switch Name="Sneaker" ID="{8B23137D-212A-4A8B-B0D0-0BF7C0785BA4}"/>
+						<Switch Name="Highheel" ID="{1C0D61B5-9985-4B68-ACFE-FE61FA219267}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="SurfaceType" ID="{CEB9E9E0-AB37-4564-A6AB-7488ACFD178D}">
+					<ChildrenList>
+						<Switch Name="Dirt" ID="{635F3ADE-165C-43B8-8C45-434544C4BC43}"/>
+						<Switch Name="Grass" ID="{587513B4-02E6-4A0F-85EE-2A873A6F6C94}"/>
+						<Switch Name="Rock" ID="{01A854E4-BD2A-4AB2-BF79-4E8BF6993318}"/>
+						<Switch Name="Wood" ID="{3D8AFF7B-FA62-47AA-A90F-ACC0FE105DAF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="MovementType" ID="{76E91412-0F74-4FC3-89F5-7770F96BD321}">
+					<ChildrenList>
+						<Switch Name="Walk" ID="{E37744D4-0825-43BA-BD76-AED4DCF6BE77}"/>
+						<Switch Name="Move" ID="{C31A8835-1511-4E70-A534-5DF88C9361D3}"/>
+						<Switch Name="Jump" ID="{C9D03A07-DED6-4D3C-8B60-F5D8D6F25BFE}"/>
+						<Switch Name="Land" ID="{D0C6D17C-F383-40A3-9417-BEE6967D7AC6}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

@@ -40,3 +40,7 @@ GeneratedSoundBanks/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Build
+
+Bin/

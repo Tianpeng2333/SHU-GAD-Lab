@@ -105,6 +105,7 @@ namespace StarterAssets
         private CharacterController _controller;
         private StarterAssetsInputs _input;
         private GameObject _mainCamera;
+        private WwiseCharacterFoley _wwiseFoley;
 
         private const float _threshold = 0.01f;
 
@@ -139,6 +140,7 @@ namespace StarterAssets
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
+            _wwiseFoley = GetComponent<WwiseCharacterFoley>();
 #if ENABLE_INPUT_SYSTEM 
             _playerInput = GetComponent<PlayerInput>();
 #else
@@ -304,6 +306,7 @@ namespace StarterAssets
                 {
                     // the square root of H * -2 * G = how much velocity needed to reach desired height
                     _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                    _wwiseFoley?.PlayJump();
 
                     // update animator if using character
                     if (_hasAnimator)
@@ -373,7 +376,18 @@ namespace StarterAssets
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
-                if (FootstepAudioClips.Length > 0)
+                if (_wwiseFoley != null)
+                {
+                    if (_input != null && _input.sprint)
+                    {
+                        _wwiseFoley.PlayRunFootstep();
+                    }
+                    else
+                    {
+                        _wwiseFoley.PlayMoveFootstep();
+                    }
+                }
+                else if (FootstepAudioClips.Length > 0)
                 {
                     var index = Random.Range(0, FootstepAudioClips.Length);
                     AudioSource.PlayClipAtPoint(FootstepAudioClips[index], transform.TransformPoint(_controller.center), FootstepAudioVolume);
@@ -385,7 +399,14 @@ namespace StarterAssets
         {
             if (animationEvent.animatorClipInfo.weight > 0.5f)
             {
-                AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                if (_wwiseFoley != null)
+                {
+                    _wwiseFoley.PlayLanding();
+                }
+                else
+                {
+                    AudioSource.PlayClipAtPoint(LandingAudioClip, transform.TransformPoint(_controller.center), FootstepAudioVolume);
+                }
             }
         }
     }

@@ -8,7 +8,7 @@
 						<Action Name="" ID="{184EC6B7-B626-479C-97E2-C103DC444998}" ShortID="410589697">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AWB_Forest_Outdoor" ID="{A691E361-6F42-470B-A1C8-81829F93A6EB}" WorkUnitID="{1E613BB4-2E17-411D-A8D4-21C5E175FE05}"/>
+									<ObjectRef Name="AMB_Forest_Outdoor" ID="{A691E361-6F42-470B-A1C8-81829F93A6EB}" WorkUnitID="{1E613BB4-2E17-411D-A8D4-21C5E175FE05}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -20,6 +20,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="OBJ_Campfire" ID="{A78C983B-71A8-46F2-808A-8110D5B759A5}" WorkUnitID="{1E613BB4-2E17-411D-A8D4-21C5E175FE05}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_CHR_Foley" ID="{A9F3D975-736D-4F56-9137-88621F8CC896}">
+					<ChildrenList>
+						<Action Name="" ID="{2FFCFD87-581A-4EEF-B505-BD2411864246}" ShortID="152665235">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CHR_Foley" ID="{F502F1DF-A682-4C88-AEEF-E6408AEEBC12}" WorkUnitID="{1E613BB4-2E17-411D-A8D4-21C5E175FE05}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

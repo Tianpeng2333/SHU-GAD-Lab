@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8BDDDC4A-B257-4641-B47F-C7D68775A592}" SchemaVersion="133">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{8BDDDC4A-B257-4641-B47F-C7D68775A592}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8BDDDC4A-B257-4641-B47F-C7D68775A592}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_PlayerIndoor" ID="{B89B100E-37B8-4CF0-82DB-45366C7B5714}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
