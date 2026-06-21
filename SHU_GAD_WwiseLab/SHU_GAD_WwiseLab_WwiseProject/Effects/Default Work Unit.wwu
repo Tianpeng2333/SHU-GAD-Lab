@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6747D9F6-3BF3-4220-89C7-A9283C9CC399}" SchemaVersion="133">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{6747D9F6-3BF3-4220-89C7-A9283C9CC399}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6747D9F6-3BF3-4220-89C7-A9283C9CC399}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="EFT_Forest_3D_Animal_Reverb" ID="{DD0FA00A-3A40-4357-AADB-085873F6F2CC}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="-4.3"/>
+						<Property Name="WetLevel" Type="Real32" Value="-25"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
