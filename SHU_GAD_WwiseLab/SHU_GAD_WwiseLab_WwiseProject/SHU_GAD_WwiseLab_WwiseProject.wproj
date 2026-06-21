@@ -13,6 +13,7 @@
         <Language Name="SFX" ID="{B1EF16D9-3B22-4DCE-8BDF-9A91B1C0DF2F}" />
       </LanguageList>
       <PropertyList>
+        <Property Name="AutoSoundBankEnabled" Type="bool" Value="True" />
         <Property Name="ExternalSourcesInputPath" Type="string">
           <ValueList>
             <Value Platform="Mac">
@@ -23,23 +24,17 @@
         </Property>
         <Property Name="ExternalSourcesOutputPath" Type="string">
           <ValueList>
-            <Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
-            <Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+            <Value Platform="Mac">..\Assets\GeneratedSoundBanks\Mac\</Value>
+            <Value Platform="Windows">..\Assets\GeneratedSoundBanks\Windows\</Value>
           </ValueList>
         </Property>
-        <Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" />
-        <Property Name="GenerateSoundBankXML" Type="bool" Value="False" />
         <Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
-        <Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" />
-        <Property Name="GenerateSoundBankJSON" Type="bool" Value="True" />
-        <Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True" />
-        <Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True" />
-        <Property Name="AutoSoundBankEnabled" Type="bool" Value="True" />
-        <Property Name="SoundBankHeaderFilePath" Type="string" Value="..\Assets\WwiseData\Bank\" />
+        <Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" />
+        <Property Name="SoundBankHeaderFilePath" Type="string" Value="..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\" />
         <Property Name="SoundBankPaths" Type="string">
           <ValueList>
-            <Value Platform="Mac">..\Assets\WwiseData\Bank\Mac\</Value>
-            <Value Platform="Windows">..\Assets\WwiseData\Bank\Windows\</Value>
+            <Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
+            <Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
           </ValueList>
         </Property>
         <Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -873,8 +868,7 @@
             </Property>
             <Property Name="ExternalSourcesOutputPath" Type="string">
               <ValueList>
-                <Value>
-                </Value>
+                <Value>..\Assets\GeneratedSoundBanks\</Value>
               </ValueList>
             </Property>
             <Property Name="FilterBehavior" Type="int16">
@@ -1016,7 +1010,7 @@
             </Property>
             <Property Name="SoundBankPaths" Type="string">
               <ValueList>
-                <Value>..\Assets\WwiseData\Bank\</Value>
+                <Value>GeneratedSoundBanks\</Value>
               </ValueList>
             </Property>
             <Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -6846,8 +6840,7 @@
             </Property>
             <Property Name="ExternalSourcesOutputPath" Type="string">
               <ValueList>
-                <Value>
-                </Value>
+                <Value>..\Assets\GeneratedSoundBanks\</Value>
               </ValueList>
             </Property>
             <Property Name="ExternalSourcesOverrideInputPath" Type="bool">
@@ -6978,7 +6971,7 @@
             </Property>
             <Property Name="SoundBankPaths" Type="string">
               <ValueList>
-                <Value>..\Assets\WwiseData\Bank\</Value>
+                <Value>GeneratedSoundBanks\</Value>
               </ValueList>
             </Property>
             <Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -12665,6 +12658,9 @@
           </PropertyList>
         </SharedPropertyList>
       </SharedValues>
+      <LogCentralIgnoreList>
+        <IgnoreItem MessageId="BusMissingAudioDevice" />
+      </LogCentralIgnoreList>
       <DefaultConversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" />
       <PhysicalFolderList>
         <PhysicalFolder Path="Attenuations">
