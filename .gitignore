@@ -1,0 +1,42 @@
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+
+# Generated project files
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity cache and metadata
+.vs/
+.vscode/
+sysinfo.txt
+*.stackdump
+
+# Wwise generated files
+*.cache
+*.prof
+*.validationcache
+GeneratedSoundBanks/
+*.wem
+*.bnk
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
