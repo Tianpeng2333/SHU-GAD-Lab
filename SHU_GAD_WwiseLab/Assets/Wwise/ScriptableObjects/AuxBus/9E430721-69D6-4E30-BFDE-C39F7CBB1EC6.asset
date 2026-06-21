@@ -9,10 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e438cd53ee8bdbf4f8ca9f778636e5d3, type: 3}
-  m_Name: EDE3408A-1F1D-49B6-9CA0-6F37A80517E3
+  m_Script: {fileID: 11500000, guid: 970e0e3c7267b5440bbb4b1561e4659e, type: 3}
+  m_Name: 9E430721-69D6-4E30-BFDE-C39F7CBB1EC6
   m_EditorClassIdentifier: 
-  objectName: Play_OBJ_Campfire
-  id: 3974548175
-  guid: EDE3408A-1F1D-49B6-9CA0-6F37A80517E3
-  IsInUserDefinedSoundBank: 1
+  objectName: Aux_Room_Reverb_Small
+  id: 3662382956
+  guid: 9E430721-69D6-4E30-BFDE-C39F7CBB1EC6
