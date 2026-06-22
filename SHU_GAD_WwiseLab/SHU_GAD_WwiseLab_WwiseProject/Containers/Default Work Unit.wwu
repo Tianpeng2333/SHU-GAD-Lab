@@ -363,7 +363,7 @@
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>70</Value>
+										<Value>58</Value>
 									</ValueList>
 								</Property>
 								<Property Name="InitialDelay" Type="Real64">
@@ -375,12 +375,12 @@
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>46</Value>
+										<Value>33</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>-40</Value>
+										<Value>-50</Value>
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -390,7 +390,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -548,12 +548,12 @@
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>42</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
-										<Value>-300</Value>
+										<Value>-180</Value>
 									</ValueList>
 								</Property>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
@@ -565,6 +565,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
