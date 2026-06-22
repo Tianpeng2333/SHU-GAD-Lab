@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_OBJ_Campfire
   id: 3974548175
   guid: EDE3408A-1F1D-49B6-9CA0-6F37A80517E3
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1
