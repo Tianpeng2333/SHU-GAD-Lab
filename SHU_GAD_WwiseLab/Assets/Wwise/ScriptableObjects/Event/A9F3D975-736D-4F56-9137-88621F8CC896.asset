@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Play_CHR_Foley
   id: 1653164563
   guid: A9F3D975-736D-4F56-9137-88621F8CC896
-  IsInUserDefinedSoundBank: 1
+  IsInUserDefinedSoundBank: 0
