@@ -380,11 +380,11 @@ namespace StarterAssets
                 {
                     if (_input != null && _input.sprint)
                     {
-                        _wwiseFoley.PlayRunFootstep();
+                        _wwiseFoley.PlayMoveFootstep();
                     }
                     else
                     {
-                        _wwiseFoley.PlayMoveFootstep();
+                        _wwiseFoley.PlayWalkFootstep();
                     }
                 }
                 else if (FootstepAudioClips.Length > 0)

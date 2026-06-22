@@ -31,12 +31,12 @@ public class WwiseCharacterFoley : MonoBehaviour
         characterController = GetComponent<CharacterController>();
     }
 
-    public void PlayMoveFootstep()
+    public void PlayWalkFootstep()
     {
         Play("Walk", true);
     }
 
-    public void PlayRunFootstep()
+    public void PlayMoveFootstep()
     {
         Play("Move", true);
     }
